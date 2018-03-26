@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "cjango\\Shop\\ShopProvider"
+                "cjango\\Shop\\ShopServiceProvider"
             ],
             "aliases": {
                 "Shop": "cjango\\Shop\\Facade"
