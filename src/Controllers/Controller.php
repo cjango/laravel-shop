@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace cjango\Shop\Http\Controllers;
+namespace cjango\Shop\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

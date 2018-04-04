@@ -2,10 +2,20 @@
 
 namespace cjango\Shop\Models;
 
-class Goods extends Model
+use cjango\Shop\Contracts\Buyable;
+use cjango\Shop\Traits\Cartable;
+
+class Goods extends Model implements Buyable
 {
-    public function user()
+    use Cartable;
+
+    public function getStock()
     {
-        return $this->belongsTo(config('cshop.providers.user'));
+        return $this->stock;
+    }
+
+    public function pictures()
+    {
+        return $this->hasMany(GoodsPicture::class);
     }
 }

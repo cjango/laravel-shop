@@ -6,6 +6,6 @@ class GoodsPicture extends Model
 {
     public function goods()
     {
-        return $this->belongsTo(config('cshop.providers.goods'));
+        return $this->belongsTo(Goods::class);
     }
 }
